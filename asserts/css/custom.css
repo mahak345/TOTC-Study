@@ -1,0 +1,58 @@
+:root {
+            --bs-primary-rgb: 20, 184, 166; /* Tailwind's teal-500 */
+            --bs-teal-500: #14b8a6;
+            --bs-teal-400: #2dd4bf;
+            --bs-teal-900: #0f2c41;
+            --bs-yellow-400: #facc15;
+            --bs-yellow-300: #fde047;
+            --bs-gray-50: #f9fafb;
+            --bs-gray-800: #1f2937;
+            --bs-gray-600: #4b5563;
+        }
+
+        body {
+            font-family: 'sans-serif', 'system-ui';
+            color: var(--bs-gray-800);
+            line-height: 1.625;
+            background-color: white;
+        }
+
+        .text-yellow-400 { color: var(--bs-yellow-400) !important; }
+        .bg-yellow-400 { background-color: var(--bs-yellow-400) !important; }
+        .bg-teal-500 { background-color: var(--bs-teal-500) !important; }
+        .text-teal-900 { color: var(--bs-teal-900) !important; }
+        .bg-teal-400 { background-color: var(--bs-teal-400) !important; }
+        .rounded-3xl { border-radius: 1.5rem !important; }
+        .rounded-b-80px { border-bottom-left-radius: 80px; border-bottom-right-radius: 80px; }
+        .underline-hover:hover { text-decoration: underline !important; }
+        
+        .shadow-md { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; }
+        .shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important; }
+
+        .feature-card {
+            background-color: var(--bs-gray-50);
+            border: 1px solid #e2e8f0;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .feature-card:hover {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (min-width: 768px) {
+            .order-md-1 { order: 1; }
+            .order-md-2 { order: 2; }
+        }
+        
+        .animated-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.7; }
+        }
+    </style>
