@@ -1,0 +1,32 @@
+/* === _custom.scss === */
+/* 1. Custom Scrollbar for horizontal course scroll */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* 2. Custom underline animation for links */
+.underline-hover:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 3. Animated chat bubble fade in */
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-slide-up {
+  animation: fadeInSlideUp 0.8s ease forwards;
+}/*# sourceMappingURL=custom.css.map */

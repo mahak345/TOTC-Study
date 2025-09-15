@@ -1,21 +1,24 @@
 /* Converted header styles */
 .header {
   background-color: var(--primary-color);
-  color: #21b573;
+  color: #2dd4bf;
   padding: var(--spacing-unit);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .header__logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 .header__nav a {
-  color: white;
+  color: #2dd4bf;
   margin-left: var(--spacing-unit);
   text-decoration: none;
 }
+
 .header__nav a:hover {
   text-decoration: underline;
-}
+}/*# sourceMappingURL=header.css.map */
