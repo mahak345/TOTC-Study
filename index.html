@@ -7,150 +7,66 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-
-  <!-- Custom Styles -->
   <link rel="stylesheet" href="./assets/sass/style.css" />
-
-  <style>
-    /* Footer styles */
-    .footer {
-      background-color: #f8f9fa;
-      padding: 40px 0;
-      margin-top: 40px;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
-
-    .footer-logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #14b8a6;
-    }
-
-    .footer-links h4 {
-      font-size: 1.2rem;
-      margin-bottom: 15px;
-      color: #14b8a6;
-    }
-
-    .footer-links ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .footer-links ul li {
-      margin-bottom: 10px;
-    }
-
-    .footer-links ul li a {
-      color: #6c757d;
-      text-decoration: none;
-    }
-
-    .footer-links ul li a:hover {
-      text-decoration: underline;
-    }
-
-    .social-icons a {
-      color: #6c757d;
-      margin-right: 15px;
-      font-size: 1.2rem;
-      text-decoration: none;
-    }
-
-    .social-icons a:hover {
-      color: #14b8a6;
-    }
-
-    .footer-bottom {
-      text-align: center;
-      margin-top: 20px;
-      color: #6c757d;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
+  
 <body>
+  <header class="navbar navbar-expand-md navbar-dark bg-teal fixed-top shadow">
+  <div class="container-fluid container-xl px-4 py-2" style="background-color:#14b8a6">
+      <img src="./asserts/images/Group 112.png"/>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <!-- Header / Navbar -->
-  <header class="bg-teal-500 text-white shadow fixed-top w-100">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between py-3 px-4">
-      <a href="#" class="fw-bold fs-3 text-white text-decoration-none">TOTC</a>
-
-      <!-- Desktop Navigation -->
-      <nav class="d-none d-md-flex gap-4 fs-6 fw-medium">
-        <a href="#features" class="text-white text-decoration-none">Features</a>
-        <a href="#courses" class="text-white text-decoration-none">Courses</a>
-        <a href="#testimonials" class="text-white text-decoration-none">Testimonials</a>
-        <a href="#resources" class="text-white text-decoration-none">Resources</a>
-      </nav>
-
-      <!-- Call to Action Buttons -->
-      <div class="d-flex align-items-center gap-3">
-        <a href="#" class="btn btn-light rounded-pill fw-semibold text-teal-600 px-4 d-none d-md-inline-block">Log In</a>
-        <a href="#" class="btn bg-warning rounded-pill fw-semibold text-teal-900 px-4 d-none d-md-inline-block">Sign Up</a>
-
-        <!-- Mobile Menu Button -->
-        <button class="navbar-toggler d-md-none border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- Navigation -->
+      <div class="collapse navbar-collapse" id="mobileMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0 gap-md-4">
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+        </ul>
+        <div class="d-flex gap-2 mt-3 mt-md-0 ms-md-4">
+          <a href="#" class="btn btn-light rounded-pill fw-semibold px-4">Log In</a>
+          <a href="#" class="btn btn-warning rounded-pill fw-semibold px-4">Sign Up</a>
+        </div>
       </div>
     </div>
-
-    <!-- Mobile Navigation -->
-    <nav id="mobileMenu" class="collapse navbar-collapse d-md-none bg-teal-600 px-4 py-3">
-      <ul class="navbar-nav gap-3">
-        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#features">Features</a></li>
-        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#courses">Courses</a></li>
-        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#testimonials">Testimonials</a></li>
-        <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#resources">Resources</a></li>
-        <li class="nav-item mt-3"><a href="#" class="btn btn-light rounded-pill fw-semibold text-teal-600 w-100">Log In</a></li>
-        <li class="nav-item"><a href="#" class="btn bg-warning rounded-pill fw-semibold text-teal-900 w-100">Sign Up</a></li>
-      </ul>
-    </nav>
   </header>
 
   <!-- Main Content -->
   <main class="pt-5">
-    <section class="position-relative bg-teal-400 overflow-hidden rounde
+    <section class="position-relative bg-teal-400 overflow-hidden rounded-b-80px">
+      <div class="container-fluid container-xl px-4 py-5"style="background-color:#14b8a6">
 
+        <div class="row align-items-center g-5 g-lg-4">
+          <div class="col-12 col-lg-7 space-y-4">
+            <h1 class="display-4 fw-bold text-white lh-base">
+              <span style= "color:#FCBA03">Studying</span> Online is now much easier
+            </h1>
 
+            <p class="text-white opacity-90 fs-5">
+              TOTC is an interesting platform that will teach you in a more interactive way.
+            </p>
 
-     <main class="pt-5">
-
-        <section class="position-relative bg-teal-400 overflow-hidden rounded-b-80px">
-            <div class="container-fluid container-xl px-4 py-5">
-                <div class="row align-items-center g-5 g-lg-4">
-                    <div class="col-12 col-lg-7 space-y-4">
-                        <h1 class="display-4 fw-bold text-white lh-base">
-                            <span class="text-yellow-300">Studying</span> Online is now much easier
-                        </h1>
-                        <p class="text-white opacity-90 fs-5">TOTC is an interesting platform that will teach you in a more interactive way.</p>
-                        <div class="d-flex gap-3">
-                            <a href="#courses" class="btn btn-lg rounded-pill bg-yellow-400 fw-bold text-teal-900 shadow-lg px-4">Get Started</a>
-                            <button class="btn d-flex align-items-center gap-2 text-white hover-text-yellow-300">
-                                <i class="bi bi-play-circle-fill fs-4"></i>
-                                <span>Watch How it works</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-5 position-relative d-flex justify-content-center">
-                        <img src="./asserts/images/right-image (1).png" alt="Young woman holding books and smiling" class="img-fluid rounded-3xl shadow-xl z-2" style="max-width: 25rem;" />
-                        <svg class="position-absolute top-10 start-0 w-25 animated-pulse" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <circle cx="50" cy="50" r="40" stroke="#facc15" stroke-width="4" stroke-dasharray="10 10"/>
-                        </svg>
-                    </div>
-                </div>
+            <div class="d-flex gap-3">
+              <a href="#courses" class="btn btn-lg rounded-pill bg-yellow-400 fw-bold text-teal-900 shadow-lg px-4">Join For Free</a>
+              <button class="btn d-flex align-items-center gap-2 text-white hover-text-yellow-300">
+                <i class="bi bi-play-circle-fill fs-4"></i>
+                <span>Watch How it works</span>
+              </button>
             </div>
-        </section>
-         <section aria-label="Our Success" class="container text-center py-5">
+          </div>
+
+          <div class="col-12 col-lg-5 position-relative d-flex justify-content-center">
+            <img src="./asserts/images/right-image (1).png" alt="Young woman " class="img-fluid rounded-3xl shadow-xl z-2" style="max-width: 25rem;" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+        <section aria-label="Our Success" class="container text-center py-5">
             <h2 class="display-6 fw-bold text-teal-900 mb-3">Our Success</h2>
             <p class="text-gray-700 mx-auto mb-5" style="max-width: 40rem;">Ornare id fames interdum porttitor nulla turpis etiam.Diam viate sollicitudin
                 naem et pharetra gravida.adipiscing a quis ultrices eu ornare eu tritique vel nis orci.</div>
@@ -183,48 +99,10 @@
             </div>
         </section>
 
-        
-
-        <section class="container-fluid container-xl px-4 py-5">
-            <h3 class="fs-4 fw-bold text-teal-900 text-center mb-4">What is TOTC?</h3>
-            <p class="text-center mx-auto mb-5">TOTC is a platform that allows educators to create online classes where they can store course materials, manage assignments, quizzes, and exams, monitor due dates, grade results, and provide students with feedback all in one place.</p>
-            <div class="row g-4 justify-content-center mx-auto" style="max-width: 60rem;">
-                <div class="col-12 col-md-6">
-                    <article class="card rounded-3 overflow-hidden shadow-lg hover-shadow-xl cursor-pointer position-relative">
-                        <img src="./asserts/images/Group 22.png" alt="Instructor using Totc platform in a modern classroom environment" class="card-img-top w-100 object-fit-cover" style="height: 14rem;" />
-                        <div class="position-absolute bottom-0 start-0 m-3 px-3 py-2 bg-yellow-400 text-teal-900 rounded fw-semibold fs-5 shadow-sm">For Instructors</div>
-                    </article>
-                </div>
-                <div class="col-12 col-md-6">
-                    <article class="card rounded-3 overflow-hidden shadow-lg hover-shadow-xl cursor-pointer position-relative">
-                        <img src="./asserts/images/Group 23.png" alt="Students interacting with online learning devices at home" class="card-img-top w-100 object-fit-cover" style="height: 14rem;" />
-                        <div class="position-absolute bottom-0 start-0 m-3 px-3 py-2 bg-yellow-400 text-teal-900 rounded fw-semibold fs-5 shadow-sm">For Students</div>
-                    </article>
-                </div>
-            </div>
-            <div class="row g-5 align-items-center mt-5 justify-content-center mx-auto" style="max-width: 60rem;">
-                <div class="col-12 col-md-6">
-                    <h4 class="fs-5 fw-bold text-teal-800 mb-3">Everything we can do is analyzed precisely, so you don't miss a thing on TOTC</h4>
-                    <p class="text-gray-700">TOTC school management software helps traditional and online schools manage scheduling, attendance, payments, and virtual classrooms all in one secure cloud-based system.</p>
-                    <ul class="list-unstyled mt-4 text-gray-700">
-                        <li><i class="bi bi-dot"></i> Learn more</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="rounded-3 overflow-hidden shadow-lg border border-teal-200">
-                        <img src="./asserts/images/Group 17.png" alt="Modern classroom with a group of students including laptops and tablets" class="img-fluid w-100 h-100 object-fit-cover" />
-                    </div>
-                </div>
-            </div>
-        </section>
-
-       
-           
-
-        <section id="features" class="bg-light pb-5 pt-3">
+         <section id="features" class="bg-light pb-5 pt-3">
             <div class="container-fluid container-xl px-4">
                 <div class="text-center mx-auto mb-5" style="max-width: 50rem;">
-                    <h3 class="fs-4 fw-bold text-teal-800">All-in-One Cloud Software</h3>
+                    <h3 class="fs-4 fw-bold text-teal-800"><span style="color: #2F327D">All in one</span><span style="color: #14b8a6">Cloud Software</span></h3>
                     <p class="text-gray-600 mt-2">Totc is one powerful online software suite that combines all the tools 
                         need to a succesful school or life .</p>
                 </div>
@@ -243,10 +121,10 @@
                             <p class="text-gray-600 fs-6">Sedule and reseve classroom at one
                                  campus and multiple campus
                                  keepp detailed of a student
-                                 Attendance.</p>
-                        </article>
+                         Attendance.</p> 
+                    </article>
                     </div>
-                    <div class="col">
+                        <div class="col">
                         <article class="feature-card text-center">
                             <h4 class="fw-bold fs-5 mb-2">Customer Rating & Feedback</h4>
                             <p class="text-gray-600 fs-6">Gather insightful feedback from students and parents to improve teaching quality continuously.</p>
@@ -256,9 +134,27 @@
             </div>
         </section>
 
+         <section class="container-fluid container-xl px-4 py-5">
+            <h3 class="fs-4 fw-bold text-teal-900 text-center mb-4" style="color: #2F327D;">What is <span style="color: #14b8a6">TOTC?</span></h3>
+            <p class="text-center mx-auto mb-5">TOTC is a platform that allows educators to create online classes where they can store course materials, manage assignments, quizzes, and exams, monitor due dates, grade results, and provide students with feedback all in one place.</p>
+            <div class="row g-4 justify-content-center mx-auto" style="max-width: 60rem;">
+                <div class="col-12 col-md-6">
+                    <article class="card rounded-3 overflow-hidden shadow-lg hover-shadow-xl cursor-pointer position-relative">
+                        <img src="./asserts/images/Group 22.png" alt="Instructor environment" class="card-img-top w-100 object-fit-cover" style="height: 14rem;" />
+                        <div class="position-absolute bottom-0 start-0 m-3 px-3 py-2 bg-yellow-400 text-teal-900 rounded fw-semibold fs-5 shadow-sm">For Instructors</div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6">
+                    <article class="card rounded-3 overflow-hidden shadow-lg hover-shadow-xl cursor-pointer position-relative">
+                        <img src="./asserts/images/Group 23.png" alt="Students home" class="card-img-top w-100 object-fit-cover" style="height: 14rem;" />
+                        <div class="position-absolute bottom-0 start-0 m-3 px-3 py-2 bg-yellow-400 text-teal-900 rounded fw-semibold fs-5 shadow-sm">For Students</div>
+                    </article>
+                </div>
+            </div>
             <div class="row g-5 align-items-center mt-5 justify-content-center mx-auto" style="max-width: 60rem;">
                 <div class="col-12 col-md-6">
-                    <h4 class="fs-5 fw-bold text-teal-800 mb-3">Everything we can do is analyzed precisely, so you don't miss a thing on TOTC</h4>
+                    <h3 class="fs-5 fw-bold text-teal-800 mb-3" style="color: #2f327d;">Everything You can do Physical
+                     classroom <span style="color: #14b8a6;">You can Do with TOTC</span></h3>
                     <p class="text-gray-700">TOTC school management software helps traditional and online schools manage
                          scheduling, attendance, payments, and virtual classrooms all
                           in one secure cloud-based system.</p>
@@ -268,7 +164,7 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="rounded-3 overflow-hidden shadow-lg border border-teal-200">
-                        <img src="./asserts/images/Group 17.png" alt="Modern classroom with a group of students including laptops and tablets" class="img-fluid w-100 h-100 object-fit-cover" />
+                        <img src="./asserts/images/Group 17.png" alt="Modern classroom with ptops and tablets" class="img-fluid w-100 h-100 object-fit-cover" />
                     </div>
                 </div>
             </div>
@@ -280,10 +176,10 @@
                 
                 <div class="row g-5 align-items-center justify-content-center mx-auto" style="max-width: 60rem;">
                     <div class="col-12 col-md-6 order-1 order-md-1">
-                        <img src="." alt="Digital classroom user interface with student profiles, chat messages and assignment submissions shown on screen" class="img-fluid w-100 h-100 object-fit-cover rounded-3xl shadow-lg border border-warning" />
+                        <img src="./asserts/images/Group 106.png" alt="Digital classroom  submissions" class="img-fluid w-100 h-100 object-fit-cover rounded-3xl shadow-lg border border-warning" />
                     </div>
                     <div class="col-12 col-md-6 order-2 order-md-2">
-                        <h4 class="fs-5 fw-bold text-teal-800 mb-4">A user interface designed for the classroom</h4>
+                        <h4 class="fs-5 fw-bold text-teal-800 mb-4"<span style=color:#14b8a6>A user interface</span><span style=color:#2F327D>designed for the classroom</span> </h4>
                         <ul class="list-unstyled text-gray-700 space-y-2">
                             <li><i class="bi bi-dot"></i> Teachers don't get lost in the grid view and have a dedicated podium space.</li>
                             <li><i class="bi bi-dot"></i> TAs and presenters can be moved to the front of the class.</li>
@@ -294,25 +190,25 @@
                 
                 <div class="row g-5 align-items-center mt-5 justify-content-center mx-auto" style="max-width: 60rem;">
                     <div class="col-12 col-md-6 order-2 order-md-1">
-                        <h4 class="fs-5 fw-bold text-teal-800 mb-4">Tools for Teachers and Learners</h4>
+                        <h4 class="fs-5 fw-bold text-teal-800 mb-4"<span style=color:#14b8a6>Tools </span><span style=color:#2F327D>for Teachers and Learners</span> </h4>
                         <p class="text-gray-700 mb-4">Class has a dynamic set of teaching tools built to be deployed and used during class. Teachers can hand out assignments in real-time for students to complete and submit.</p>
                         <ul class="list-unstyled text-gray-700 space-y-2">
                             
                         </ul>
                     </div>
                     <div class="col-12 col-md-6 order-1 order-md-2">
-                        <img src="./asserts/images/Group 122.png" alt="Teachers digital tools" class="img-fluid w-100 h-100 object-fit-cover rounded-3xl shadow-lg border border-warning" />
+                        <img src="./asserts/images/Group 122.png" alt="Teachers " class="img-fluid w-100 h-100 object-fit-cover rounded-3xl shadow-lg border border-warning" />
                     </div>
                 </div>
 
                 <div class="row g-5 align-items-center mt-5 justify-content-center mx-auto" style="max-width: 60rem;">
                     <div class="col-12 col-md-6 order-1">
                         <figure class="rounded-3 overflow-hidden shadow-lg border border-teal-200" style="height: 16rem;">
-                            <img src="./asserts/images/Group 92 (1).png" alt="Student taking quiz onlinestyle" class="img-fluid w-100 h-100 object-fit-cover" />
+                            <img src="./asserts/images/Group 92 (1).png" alt="Student " class="img-fluid w-100 h-100 object-fit-cover" />
                         </figure>
                     </div>
                     <div class="col-12 col-md-6 order-2">
-                        <h4 class="fs-5 fw-bold text-teal-800 mb-4">Assessments, Quizzes, Tests</h4>
+                        <h4 class="fs-5 fw-bold text-teal-800 mb-4"<span style="color: #14b8a6;">Assessments, Quizzes, Tests</span></h4>
                         <p class="text-gray-700 mb-4"> Easily Launch live Assements,quizzes  and test.Student Result Are Automically enteredin the online gradeekbook.</p>
                         <ul class="list-unstyled text-gray-700 space-y-2">
                             
@@ -322,7 +218,9 @@
                 
                 <div class="row g-5 align-items-center mt-5 justify-content-center mx-auto" style="max-width: 60rem;">
                     <div class="col-12 col-md-6 order-2 order-md-1">
-                        <h4 class="fs-5 fw-bold text-teal-800 mb-4">Class Management Tools for Instructors</h4>
+                        <h3 class="fs-5 fw-bold text-teal-800 mb-4"<span style="color: #14b8a6;">Class Management</span>
+                       <span style="color: #2f327d"></color:>Tools for Instructors</span></h3>
+
                         <p class="text-gray-700 mb-4">Manage your classes with calendars, attendance tracking, and communication channels, all integrated in one seamless share notes in environment interface.</p>
                         <ul class="list-unstyled text-gray-700 space-y-2">
 
@@ -330,30 +228,120 @@
                     </div>
                     <div class="col-12 col-md-6 order-1 order-md-2">
                         <figure class="rounded-3 overflow-hidden shadow-lg border border-teal-200" style="height: 16rem;">
-                            <img src="./asserts/images/Group 124 (1).png" alt="Class management on TOTC platform" class="img-fluid w-100 h-100 object-fit-cover" />
+                            <img src="./asserts/images/Group 124 (1).png" alt="Class management" class="img-fluid w-100 h-100 object-fit-cover" />
                         </figure>
                     </div>
                 </div>
-                
-                <div class="row g-5 align-items-center mt-5 justify-content-center mx-auto pb-5" style="max-width: 60rem;">
+                                   
+                    <div class="row g-5 align-items-center mt-5 justify-content-center mx-auto pb-5" style="max-width: 60rem;">
                     <div class="col-12 col-md-6 order-1">
                         <figure class="rounded-3 overflow-hidden shadow-lg border border-teal-200" style="height: 16rem;">
-                            <img src="./asserts/images/Group 106.png" alt="One-on-one discussion interface" class="img-fluid w-100 h-100 object-fit-cover" />
+                            <img src="./asserts/images/Group 106.png" alt="One-on-one " class="img-fluid w-100 h-100 object-fit-cover" />
                         </figure>
                     </div>
                     <div class="col-12 col-md-6 order-2">
-                        <h4 class="fs-5 fw-bold text-teal-800 mb-4">One-on-One Discussions</h4>
+                        <h3 class="fs-5 fw-bold text-teal-800 mb-4 "<span style="color: #2f327d;">One-on-One</span><span style="color: #14b8a6">Discussions</span></h3>
                         <p class="text-gray-700">Facilitate personalized mentoring and tutoring using integrated video conferencing, chat, and shared notes shared the notes in environment.</p>
                     </div>
                 </div>
+                <!---Explore course-->
+                   <section class="explore-course py-5">
+  <div class="container">
 
- 
+    <!-- Heading -->
+    <div class="row mb-4">
+      <div class="col-md-8">
+        <h2 class="fw-bold">Explore Course</h2>
+        <p class="text-muted">Ut sed eros finibus, placerat orci id, dapibus.</p>
+      </div>
+      <div class="col-md-4 text-end d-flex align-items-center justify-content-end">
+        <a href="#" class="see-all text-decoration-none fw-semibold">SEE ALL →</a>
+      </div>
+    </div>
+
+    <div class="row g-4 align-items-center">
+      <!-- Left side cards -->
+      <div class="stage">
+    <div class="card">
+      <div class="inner-frame">
+        <div class="pill">
+          <!-- vertical text -->
+          <span class="pill-text">Ut Sed Eros</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-- Right side preview card -->
+      <div class="col-lg-5">
+        <div class="preview-card p-3 shadow-sm rounded-4">
+          <div class="row g-3 align-items-center">
+            <div class="col-md-5">
+              <img src="" class="img-fluid rounded-circle" alt="Course">
+            </div>
+            <div class="col-md-7">
+              <h5 class="fw-bold mb-2">Integer id Orc Sed Ante Tincidunt</h5>
+              <p class="text-muted small">
+                Cras convallis lacus orci, tristique tincidunt magna fringilla at faucibus vel.
+              </p>
+              <div class="text-warning mb-2">
+                ★★★★★
+              </div>
+              <p class="fw-bold mb-2">$ 450</p>
+              <a href="#" class="btn btn-outline-primary rounded-pill px-4 py-1">EXPLORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+     
+      
+      
+  <!-- Testimonial-->
+  <section id="testimonial" class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <small class="text-uppercase text-primary fw-semibold">_____Testimonial</small>
+          <h2 class="fw-bold mb-4">What They Say?</h2>
+          <p class="text-muted">
+            TOTC has got more than 100k positive ratings from our users around the world.</p>
+            <p>Some of the students and teachers were greatly helped by the Skilline.
+          </p>
+          <p class="text-muted">Are you too? Please give your assessment.</p>
+          <a href="#" class="btn btn-outline-info rounded-pill px-4">
+            Write your assessment <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="col-lg-7 d-flex flex-column align-items-center">
+          <img src="./asserts/images/mask.png" class="testimonial-img mb-4" alt="User">
+          <div class="testimonial-card shadow rounded-4 p-4">
+            <p class="mb-3">
+              "Thank you so much for your help. It's exactly what I've been looking for.
+              You won't regret it. It really saves me time and effort.
+              TOTC is exactly what our business has been lacking."
+            </p>
+              <div class="d-flex align-items-center justify-content-between mt-2">
+              <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <small class="text-muted">Gloria Rose</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
 <!-- ==== LATEST NEWS & RESOURCES ===== -->
 <section class="py-5">
   <div class="container">
     <!--heading-->
     <div class="text-center mb-5">
-        <h2 class="fw-bold text-primary">Lastest News and Resources</h2>
+        <h2 class="fw-bold text-primary"><span style="color: #2F327D">Lastest News and Resources</span></h2>
         <p class="text-muted">See the developments that have occured to TOTC in the world.</p>
     </div>
 
@@ -387,7 +375,7 @@
 </section>
 
 <!-- ================== FOOTER ================== -->
-<footer class="footer">
+<footer class ="footer" style ="background-color:#252671">
   <div class="container footer-grid">
     <div class="footer-about">
       <h3 class="footer-logo">TOTC</h3>
