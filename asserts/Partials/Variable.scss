@@ -13,6 +13,12 @@ $spacing-unit: 1rem;
   --background-color: #f9fafb;
   --spacing-unit: 1rem;
   --secondary-color: #4b5563;
+  --card-bg: #ffffff;     /* white outer card */
+  --frame-bg: #e7ffdb;    /* pale green frame */
+  --pill-bg: #ff8000;     /* orange pill */
+  --shadow: 0 12px 28px rgba(30,60,100,0.08);
+  --card-w: 120px;        /* card width (controls overall scale) */
+  --card-h: 380px;        /* card height */
 }
 // Variables
 $primary-color: #2dd4bf;
@@ -25,7 +31,233 @@ $dark: #1e1e1e;
 $light: #f9f9f9;
 $text: #333;
 
-// ===== TESTIMONIALS =====
+// pills
+:root{
+  --bg: #eaf3fb;          /* page background */
+
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--bg);
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  padding:40px;
+}
+
+/* Stage centers multiple cards if needed */
+.stage{display:flex; gap:24px; align-items:center;}
+
+/* Outer white card */
+.card{
+  width: 104px;;
+  height: 418px;;
+  background: #FFFFFF;
+  border-radius:18px;
+  padding:18px;
+  box-shadow: 0px 3px 49px 9px #0000000F;
+  transform: rotate(-10.2 deg); /* tilt angle like image */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* pale green frame inside */
+.inner-frame{
+  width:100%;
+  height:100%;
+  background:var(--frame-bg);
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px;
+}
+
+/* orange pill */
+.pill{
+  width:64px;                /* pill width */
+  height:86%;               /* pill height relative to frame */
+  background:var(--pill-bg);
+  border-radius:34px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+  position:relative;
+  padding:8px;
+  overflow:hidden;
+}
+
+/* Vertical text in pill */
+/* two ways shown; we use writing-mode for correct vertical layout */
+.pill-text{
+  display:inline-block;
+  font-weight:600;
+  font-size:14px;
+  line-height:1;
+  color:#ffffff;
+  /* make text vertical like the image */
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg); /* flip so it reads top→bottom like sample */
+  white-space:nowrap;
+  letter-spacing:1px;
+}
+
+/* small responsive tweak: make larger on big screens */
+@media (min-width:900px){
+  :root{--card-w:140px; --card-h:420px}
+  .pill{width:80px}
+  .pill-text{font-size:16px}
+}
+    .rectangle {
+  width: 104.39px;
+  height: 418.43px;
+  background-color:#FF6F00;
+  transform: rotate(10.02); 
+}
+/* Main section background */
+.explore-course {
+  background: #f5f9ff;
+}
+
+.see-all {
+  color: #00b3e6;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:var(--bg);
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  padding:40px;
+}
+
+/* Stage centers multiple cards if needed */
+.stage{display:flex; gap:24px; align-items:center;}
+
+/* Outer white card */
+.card{
+  width:var(--card-w);
+  height:var(--card-h);
+  background:var(--card-bg);
+  border-radius:18px;
+  padding:18px;
+  box-shadow:var(--shadow);
+  transform: rotate(-deg); /* tilt angle like image */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* pale green frame inside */
+.inner-frame{
+  width:100%;
+  height:100%;
+  background:var(--frame-bg);
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px;
+}
+
+/* orange pill */
+.pill{
+  width:64px;                /* pill width */
+  height:86%;               /* pill height relative to frame */
+  background:var(--pill-bg);
+  border-radius:34px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+  position:relative;
+  padding:8px;
+  overflow:hidden;
+}
+
+/* Vertical text in pill */
+/* two ways shown; we use writing-mode for correct vertical layout */
+.pill-text{
+  display:inline-block;
+  font-weight:600;
+  font-size:14px;
+  line-height:1;
+  color:#ffffff;
+  /* make text vertical like the image */
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg); /* flip so it reads top→bottom like sample */
+  white-space:nowrap;
+  letter-spacing:1px;
+}
+
+/* small responsive tweak: make larger on big screens */
+@media (min-width:900px){
+  :root{--card-w:140px; --card-h:420px}
+  .pill{width:80px}
+  .pill-text{font-size:16px}
+}
+
+/* Category Cards */
+.category-card {
+  width: 80px;
+  height: 240px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-12deg);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.category-inner {
+  width: 60%;
+  height: 90%;
+  background: #e8ffe5;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-inner span {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1;
+}
+
+/* Different colors for each category */
+.bg-orange { background: #ff8000; }
+.bg-pink   { background: #ff7373; }
+.bg-brown  { background: #a0522d; }
+.bg-yellow { background: #f4c430; }
+.bg-purple { background: #c084fc; }
+.bg-blue   { background: #3bb2ff; }
+.bg-green  { background: #3cd070; }
+
+/* Preview Card */
+.preview-card {
+  background: #fff;
+  border: 1px solid #d9e7ff;
+}
+
 .testimonials {
   padding: 5rem 1rem;
   background: $light;
@@ -67,13 +299,7 @@ $text: #333;
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
     }
 
-    .testimonial-img {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1rem;
-    }
+    
 
     .testimonial-text {
       font-style: italic;
